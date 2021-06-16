@@ -21,14 +21,34 @@ export default {
                 "address": "@county(true)"
             }]
         });
-        Mock.mock('/api/getNewList', {
+        Mock.mock('/api/getNewList', { //newslist详情mck数据
             "code": "000",
-            "datas|5-20": [{
-                "id": "13",
-                "add_time": '2010-2-1',
-                "title": "房企发起人",
+            "datas|20-40": [{
+                "id": "@id",
+                "add_time": '@datetime',
+                "title": "@ctitle(1,40)",
                 "img_url": "https://dgss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2143405360,144866169&fm=30&app=106&f=JPEG?w=312&h=208&s=543202755C1250431631D0C0030070B1",
-                'click': '1'
+                'click|1-100': 100
+            }]
+        });
+
+        Mock.mock('/api/getNewsInfo', { //newsinof数据详情
+            "code": "000",
+            "message|20-40": {
+                "id": "@id",
+                "add_time": '@datetime',
+                "content": '@cparagraph',
+                "title": "@ctitle(1,40)",
+                'click|1-100': 100
+            }
+        });
+
+        Mock.mock('/api/getComments', { //评论数据
+            "code": "000",
+            "message|20-40": [{
+                'user_name': '@cname',
+                "content": '@cparagraph',
+                "add_time": '@datetime',
             }]
         });
         Mock.mock('/api/getImage', {
