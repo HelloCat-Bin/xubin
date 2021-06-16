@@ -5,6 +5,18 @@ import VueRouter from 'vue-router'
 // 1.2安装路由
 Vue.use(VueRouter)
 
+// 导入mock
+import Mock from './mock/mock';
+
+// 安装mock
+Mock.mockData();
+
+
+// 2.1导入 vue-resource
+import VueResource from 'vue-resource'
+// 2.2安装vue-resource
+Vue.use(VueResource)
+
 
 // 导入MUI的样式
 import './lib/mui/css/mui.min.css'

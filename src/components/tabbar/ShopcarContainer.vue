@@ -5,7 +5,6 @@
 </template>
 
 <script>
-console.log("44444")
 export default {
     
 }
