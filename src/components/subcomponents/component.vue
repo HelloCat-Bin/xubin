@@ -2,8 +2,9 @@
     <div class="cmt-container">
         <h4>发表评论</h4>
         <hr>
-        <textarea placeholder="请输入要评论的内容（最多吐槽120字）"></textarea>
-        <mt-button type="primary"  size="large"  >发表评论</mt-button>
+        <textarea placeholder="请输入要评论的内容（最多吐槽120字）" 
+        v-model="msg"></textarea>
+        <mt-button type="primary"  size="large" @click="postComment" >发表评论</mt-button>
        <div class="cmt-list">
            <div class="cmt-item" v-for="(item,i) in comments" :key='item.add_time'>
                <div class="cmt-title" >
@@ -27,7 +28,8 @@ export default {
         return{
             
             pageIndex:1,  //默认展示第一页
-            comments:[],
+            comments:[],  //所有评论的数据
+            msg:'',   //评论输入的内容
         }
     },
     created(){
@@ -45,6 +47,9 @@ export default {
             })
         },
         getMore(){     //获取加载页
+
+        },
+        postComment(){    //点击发表评论按钮
 
         }
     },

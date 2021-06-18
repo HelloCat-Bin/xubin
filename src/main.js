@@ -24,12 +24,17 @@ import './lib/mui/css/icons-extra.css'
 
 
 // 按需导入mint-ui中的组件
-import { Header, Swipe, SwipeItem, Button } from 'mint-ui';
-Vue.component(Header.name, Header);
-Vue.component(Swipe.name, Swipe);
-Vue.component(SwipeItem.name, SwipeItem);
-Vue.component(Button.name, Button);
+// import { Header, Swipe, SwipeItem, Button, Lazyload } from 'mint-ui';
+// Vue.component(Header.name, Header);
+// Vue.component(Swipe.name, Swipe);
+// Vue.component(SwipeItem.name, SwipeItem);
+// Vue.component(Button.name, Button);
+// Vue.use(Lazyload);
 
+// 全部导入
+import MintUI from 'mint-ui'
+Vue.use(MintUI)
+import 'mint-ui/lib/style.css'
 
 // 导入自己的router.js路由模块
 import router from './router.js'
@@ -37,6 +42,10 @@ import router from './router.js'
 
 // 导入App根组件
 import app from './App.vue'
+
+// 导入图片预览Vue-preview插件
+import VuePreview from 'vue-preview';
+Vue.use(VuePreview);
 
 
 var vm = new Vue({

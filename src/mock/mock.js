@@ -21,6 +21,33 @@ export default {
                 "address": "@county(true)"
             }]
         });
+
+        Mock.mock('/api/getimagecategory', {
+            "code": "000",
+            "message|7": [{
+                "title": '@ctitle(4)',
+                "id": "@id",
+                "img_url": "https://dgss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2143405360,144866169&fm=30&app=106&f=JPEG?w=312&h=208&s=543202755C1250431631D0C0030070B1",
+                "miaoshu": "@cparagraph(2)",
+                'click|1-100': 100,
+                "add_time": '@datetime',
+                "content": '@cparagraph',
+            }]
+        });
+
+        Mock.mock('/api/getImgInfo', {
+            "code": "000",
+            "message": {
+                "title": '@ctitle(4)',
+                "id": "@id",
+                "img_url": "https://dgss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2143405360,144866169&fm=30&app=106&f=JPEG?w=312&h=208&s=543202755C1250431631D0C0030070B1",
+                "miaoshu": "@cparagraph(2)",
+                'click|1-100': 100,
+                "add_time": '@datetime',
+                "content": '@cparagraph',
+            }
+        });
+
         Mock.mock('/api/getNewList', { //newslist详情mck数据
             "code": "000",
             "datas|20-40": [{
@@ -40,6 +67,15 @@ export default {
                 "content": '@cparagraph',
                 "title": "@ctitle(1,40)",
                 'click|1-100': 100
+            }
+        });
+
+        Mock.mock('/api/getthumimages', { //photoinfo图片展开
+            "code": "000",
+            "message|20-40": {
+                "id": "@id",
+                "img_url": "https://dgss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2143405360,144866169&fm=30&app=106&f=JPEG?w=312&h=208&s=543202755C1250431631D0C0030070B1",
+
             }
         });
 

@@ -18,10 +18,10 @@
         >
       </li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-        <a href="#">
+        <router-link to="/home/photolist">
   
           <img src="../../../src/image/menu2.png" alt="" />
-          <div class="mui-media-body">商品购买</div></a
+          <div class="mui-media-body">图片分享</div></router-link
         >
       </li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
@@ -29,7 +29,7 @@
 
           <img src="../../../src/image/menu3.png" alt="" />
 
-          <div class="mui-media-body">留言反馈</div></a
+          <div class="mui-media-body">商品购买</div></a
         >
       </li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
@@ -37,7 +37,7 @@
 
           <img src="../../../src/image/menu4.png" alt="" />
 
-          <div class="mui-media-body">视频专区</div></a
+          <div class="mui-media-body">留言反馈</div></a
         >
       </li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
@@ -45,7 +45,7 @@
   
           <img src="../../../src/image/menu5.png" alt="" />
 
-          <div class="mui-media-body">联系我们</div></a
+          <div class="mui-media-body">视频专区</div></a
         >
       </li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
@@ -53,7 +53,7 @@
   
           <img src="../../../src/image/menu6.png" alt="" />
 
-          <div class="mui-media-body">Phone</div></a
+          <div class="mui-media-body">联系我们</div></a
         >
       </li>
     </ul>
