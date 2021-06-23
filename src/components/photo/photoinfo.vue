@@ -49,7 +49,7 @@ export default {
     },
     getlist(){
         this.$http.get('/api/getthumimages').then(result=>{
-            debugger
+   
             if(result.body.code==='000'){
                 //循环数组的每一项给它加下面的属性
                 result.body.message.forEach(item => {

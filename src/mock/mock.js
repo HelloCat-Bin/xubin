@@ -35,6 +35,37 @@ export default {
             }]
         });
 
+        Mock.mock('/api/getgoodslist', { //商品列表
+            "code": "000",
+            "message": [{
+                "id": "@id",
+                "title": '@csentence(5)',
+                "add_time": '@datetime',
+                "zhaiyao": "@csentence",
+                'click|1-100': 100,
+                "img_url": "@Image('200x100',@color','张遥兰') ",
+                "sell_price|1000-10000": 10000,
+                "market_price|1000-10000": 1000,
+                "stock_quantity|10-100": 10,
+                "goods_no": "@string(10)"
+            }]
+        });
+        Mock.mock('/api/getgoodsinfo', { //商品列表
+            "code": "000",
+            "message": {
+                "id": "@id",
+                "title": '@csentence(5)',
+                "add_time": '@datetime',
+                "zhaiyao": "@csentence",
+                'click|1-100': 100,
+                "img_url": "@Image('200x100',@color','张遥兰') ",
+                "sell_price|1000-10000": 10000,
+                "market_price|1000-10000": 1000,
+                "stock_quantity|10-100": 10,
+                "goods_no": "@string(10)"
+            }
+        });
+
         Mock.mock('/api/getImgInfo', {
             "code": "000",
             "message": {
