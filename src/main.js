@@ -4,8 +4,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 // 1.2安装路由
 Vue.use(VueRouter)
-
-// 导入mock
+    //djdhuih
+    // 导入mock
 import Mock from './mock/mock';
 
 //导入Vuex，配置步骤
