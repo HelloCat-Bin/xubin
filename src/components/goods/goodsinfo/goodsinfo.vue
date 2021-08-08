@@ -12,6 +12,7 @@
     <div class="mui-card">
       <div class="mui-card-content">
         <div class="mui-card-content-inner">
+            <!-- xubin修改 -->
           <swiper :lunbotuList="lunbotu"></swiper>
         </div>
       </div>
